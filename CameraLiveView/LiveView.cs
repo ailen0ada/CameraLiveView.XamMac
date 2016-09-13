@@ -51,8 +51,7 @@ namespace CameraLiveView
         {
             base.Layout();
             if (Layer != null && Layer.Sublayers != null)
-                foreach (var l in Layer.Sublayers)
-                    l.Frame = this.Bounds;
+                Layer.Sublayers[0].Frame = this.Bounds;
         }
     }
 
